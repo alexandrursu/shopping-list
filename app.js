@@ -79,6 +79,8 @@ function handleAddClick() {
     // submit new item when user hits enter key
     document.addEventListener("keyup", function(event) {
         event.preventDefault();
+        // hide error message on input change
+        errorMsg.classList.remove("show");
         if (event.keyCode === 13) {
             addButton.click();
         }
