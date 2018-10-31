@@ -6,7 +6,7 @@ You can access live [DEMO here](https://alexandrursu.github.io/shopping-list/):
 1-page of HTML / JS that performs the function of a shopping list that can be added to/removed from. Concise, clean, functional code with no external dependencies.
 
 # Solution:
-Project was build using only CSS and JavaScript, without any no additional dependencies:
+Project was build using only CSS and JavaScript, without any additional dependencies:
 
 1. CSS approach:
    * Used Flexbox for elements alignment.
