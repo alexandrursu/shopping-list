@@ -65,7 +65,11 @@ ul {
 .container .cart .cart-footer input {
     flex: 1;
     font-size: 14px;
-    padding: 5px 10px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 0;
+    box-sizing: border-box;
 }
 .container .cart .cart-footer button {
     width: 50px;
