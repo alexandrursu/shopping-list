@@ -1,0 +1,95 @@
+body {
+    font-family: Arial;
+    box-sizing: border-box;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container .cart {
+    min-width: 300px;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+}
+.container .cart .cart-container {
+    max-height: 300px;
+    overflow: auto;
+}
+.container .cart .cart-container .initial-list{
+    padding: 10px 15px;
+}
+.container .cart .cart-container ul li {
+    border-bottom: 1px solid #dddddd;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+}
+.container .cart .cart-container ul li:last-child {
+    border-bottom: none;
+}
+.container .cart .cart-container ul li .remove {
+    width: 15px;
+    height:15px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+.container .cart .cart-container ul li .remove:after {
+    content: 'x';
+}
+.container .cart .cart-header,
+.container .cart .cart-footer {
+    display: flex;
+    background: #f0f0f0;
+    padding: 20px 15px;
+    justify-content: stretch;
+}
+.container .cart .cart-header {
+    font-size: 20px;
+}
+.container .cart .cart-footer {
+    flex: 0 100%;
+    position: relative;
+}
+.container .cart .cart-footer input {
+    flex: 1;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.container .cart .cart-footer button {
+    width: 50px;
+    height: 30px;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    background: #74ad5b;
+    cursor: pointer;
+}
+.container .cart .cart-footer button:hover {
+    opacity: 0.8;
+}
+.container .cart .cart-footer .error {
+    position: absolute;
+    top: 4px;
+    font-size: 12px;
+    display: none;
+    color: #ff0000;
+}
+/*
+ Error handling classes, we are using !important
+ to make sure it overwrites any existing styles
+*/
+.hide {
+    display: none !important;
+}
+.show {
+    display: block !important;
+}
