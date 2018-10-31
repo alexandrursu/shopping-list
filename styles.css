@@ -42,6 +42,9 @@ ul {
     float: right;
     cursor: pointer;
 }
+.container .cart .cart-container ul li .remove:hover {
+    opacity: 0.5;
+}
 .container .cart .cart-container ul li .remove:after {
     content: 'x';
 }
